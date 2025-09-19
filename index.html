@@ -1,78 +1,97 @@
 
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>THE G.M CONNECT CENTER</title>
-    </head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>THE G.M CONNECT CENTER</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: rgb(240, 231, 240);
+      border: solid 1px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-    <header style = "background-color:rgb(247, 188, 247);z-index:1;position:absolute;left:4px;right:2px;top:2px;bottom:385px; padding:12px;height:63px;" >
-<div id = "items"style="display:flex;align-items:center;justify-content:space-around;">
-    
-        <a href="https://kenkim-pol.github.io/invitocad.github.io/"style="text-decoration:none;border-radius:31px;background-color:blue;color:white;width:120px;left:10px;position:absolute;padding:5px;">Home @ G.M.B
-        </a>
-        
-        <a href="https://kenkim-pol.github.io/G.M.B-History/"style="text-decoration:none;border-radius:31px;background-color:black;color:white;width:100x;position:absolute;right:400px;padding:5px;">History of the G.M</a>
-        
-        <a href="https://kenkim-pol.github.io/G.M.B-Mission/"style="text-decoration:none;border-radius:23px;position:absolute;right:800px;background-color:maroon;color:white;padding:5px">Mission <em>and</em> Vision </a>
-      <div id = "form"style="position:absolute;right:10px;">
-          
-       <form action=""><br>
-           <input type="text" name="Search"placeholder="items">
-        <input type="submit"value="Search">
-       </form>
-       
-        <hr> 
-      </div>         
-</div>  
-    </header>
- <style>
-        body {
-            background-color:rgb(240, 231, 240);
-            border:solid 1px;
-        }
-        
-        a:hover{
-            color:red;
-        }
-        
-       
+    header {
+      background-color: rgb(247, 188, 247);
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
 
-        </style>
-    <body 
-    style="width:97%;height:118%;z-index:100;position:absolute">
-    <br><br><br><br><br>
-    <a href="https://kenkim-pol.github.io/invitocad.github.io/"style="text-decoration:none;border-radius:31px;background-color:blue;color:white; z-index:2;position:absolute;align-items:center;width:312px;left:10px;top:90px;padding:29px;">the gm logo
-        </a>
-    
-<H1><a href="https://kenkim-pol.github.io/G.M.B-Mission/"style="text-decoration:none;font-family:cursive;color:rgb(95, 51, 107);z-index:3;position:absolute;left:10px;right:70px;top:160px;padding:1px;">Find more about the g.m</a></H1>
-<div id = "items"style="display:flex;align-items:center;justify-content:space-around;">
-<H2><a href="https://kenkim-pol.github.io/G.M.B-Mission/"style="text-decoration:none;border:solid 13px maroon;z-index:4;position:absolute;top:221px; padding:11px;height:36px;right-border:10px; font-family:monospace; color:rgb(117, 108, 116);">Contacts & Social links</a></H2>
+    header a {
+      text-decoration: none;
+      border-radius: 20px;
+      padding: 8px 12px;
+      margin: 4px;
+      color: white;
+      font-weight: bold;
+    }
 
-<H2><a href="https://kenkim-pol.github.io/G.M.B-Mission/"style="text-decoration:none;border:solid 3px maroon;color:rgb(117, 108, 116);z-index:5;position:absolute;top:221px; padding:11px;height:36px;font-family:monospace;">G.M.B Leadership</a></H2>
+    header a:hover {
+      color: red;
+    }
 
-<H2><a href="https://kenkim-pol.github.io/G.M.B-Mission/"style="text-decoration:none;border:solid 12px maroon;color:rgb(117, 108, 116);z-index:6;position:absolute;top:221px; right:10px;padding:11px;height:36px;font-family:monospace;">G.M.B Membership</a></H2>
-</div>
+    .btn-blue { background-color: blue; }
+    .btn-black { background-color: black; }
+    .btn-maroon { background-color: maroon; }
 
-<div id = "mytem"style="display:flex;align-items:center;justify-content:space-around;">
+    main {
+      flex: 1;
+      padding: 20px;
+    }
 
-<H2><a href="https://kenkim-pol.github.io/G.M.B-Mission/"style="text-decoration:none;border:solid 13px maroon;color:rgb(117, 108, 116);z-index:7;position:absolute;top:312px;padding:11px;height:40px; font-family:monospace;">G.M-Events/ Activities </a></H2>
+    main a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px;
+      border: solid 3px maroon;
+      border-radius: 10px;
+      text-decoration: none;
+      font-family: monospace;
+      color: rgb(117, 108, 116);
+    }
 
-<H2><a href="https://kenkim-pol.github.io/G.M.B-Mission/"style="text-decoration:none;border:solid 3px maroon;color:rgb(117, 108, 116);z-index:8;position:absolute;top:323px; padding:11px;height:40px; font-family:monospace;">Subscriptions</a></H2>
+    footer {
+      background-color: rgb(90, 219, 81);
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
 
-<H2><a href="https://kenkim-pol.github.io/G.M.B-Mission/"style="text-decoration:none;border:solid 13px maroon;color:rgb(117, 108, 116);z-index:9;position:absolute;top:312px;padding:11px;height:40px; font-family:monospace;">Add More/action</a></H2>
+  <header>
+    <div>
+      <a href="https://kenkim-pol.github.io/invitocad.github.io/" class="btn-blue">Home @ G.M.B</a>
+      <a href="https://www.khanacademy.org/computer-programming/gm-intro/6578781163732992" class="btn-black">History</a>
+      <a href="https://www.khanacademy.org/computer-programming/gm-vision-mission/4636146337431552" class="btn-maroon">Mission & Vision</a>
+    </div>
+    <form>
+      <input type="text" placeholder="Search items">
+      <input type="submit" value="Search">
+    </form>
+  </header>
 
-</div>
-             
- <h4 style="z-index:99;position:absolute;left:11px;right:75px;bottom:32px; padding:2px;">Remarks And Comments:......</h4>
-    </body>
+  <main>
+    <h1><a href="https://www.khanacademy.org/computer-programming/the-gm-infor/5686549296562176">Find more about the G.M</a></h1>
+    <a href="https://www.khanacademy.org/computer-programming/the-gm-social-coner/5944812189630464">Contacts & Social links</a>
+    <a href="#Cate">G.M.B Leadership</a>
+    <a href="#Cate">G.M.B Membership</a>
+    <a href="https://www.khanacademy.org/computer-programming/kenkim-joint-services-data/4840469136588800">Events / Activities</a>
+    <a href="#Cate">Subscriptions</a>
+    <a href="#Cate">Add More</a>
+    <h4>Remarks And Comments: ......</h4>
+  </main>
 
-<div id = "the items"style="display:flex;justify-content:space-around;">
-    
-    <footer style="background-color:rgb(90, 219, 81);z-index:13;position:absolute;left:4px;right:3px;top:500px;bottom:3px; padding:1px;">
-        <hr>
-        <p style="margin:18px;">&copy ;@ kenkim  2025.</p>
-        
-    </footer>
-</div>
+  <footer>
+    <p>&copy; @g.m.b 2025.</p>
+  </footer>
+
+</body>
 </html>
