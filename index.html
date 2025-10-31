@@ -2,18 +2,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>THE G.M CONNECT CENTER</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: rgb(240, 231, 240);
-      border: solid 1px;
+      padding: 0;
+    }
+
+    body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: rgb(240, 231, 240);
+      border: solid 1px #ccc;
     }
 
     /* ===== HEADER ===== */
@@ -25,6 +31,15 @@
       align-items: center;
       justify-content: space-between;
       gap: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
     header a {
@@ -35,20 +50,25 @@
       color: white;
       font-weight: bold;
       display: inline-block;
+      transition: background 0.3s, color 0.3s;
     }
 
-    header a:hover {
-      color: red;
-    }
-
+    /* Color classes for buttons/links */
     .btn-blue { background-color: blue; }
     .btn-black { background-color: black; }
     .btn-maroon { background-color: maroon; }
 
+    /* Hover effects for links/buttons */
+    header a:hover {
+      color: red;
+    }
+
+    /* Search form styling */
     header form {
       display: flex;
       flex-wrap: wrap;
       gap: 5px;
+      align-items: center;
     }
 
     header input[type="text"] {
@@ -62,7 +82,7 @@
       padding: 6px 12px;
       border-radius: 6px;
       border: none;
-      background: green;
+      background-color: green;
       color: white;
       cursor: pointer;
     }
@@ -71,22 +91,27 @@
     main {
       flex: 1;
       padding: 20px;
+      max-width: 1000px;
+      margin: auto;
     }
 
     main h1 {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       margin-bottom: 20px;
+      text-align: center;
     }
 
     main a {
-      display: inline-block;
-      margin: 10px;
+      display: block;
+      margin: 10px auto;
       padding: 12px;
       border: solid 3px maroon;
       border-radius: 10px;
       text-decoration: none;
       font-family: monospace;
       color: rgb(117, 108, 116);
+      max-width: 90%;
+      text-align: center;
       transition: background 0.3s;
     }
 
@@ -96,6 +121,7 @@
 
     main h4 {
       margin-top: 30px;
+      text-align: center;
     }
 
     /* ===== FOOTER ===== */
@@ -112,24 +138,20 @@
         flex-direction: column;
         align-items: stretch;
       }
-
-      header div, header form {
-        width: 100%;
-        text-align: center;
+      header .nav-links {
+        justify-content: center;
       }
-
       header a {
         margin: 6px auto;
         display: block;
         max-width: 250px;
       }
-
       main {
         padding: 15px;
       }
-
       main a {
         width: 100%;
+        max-width: none;
         text-align: center;
       }
     }
@@ -137,33 +159,32 @@
 </head>
 <body>
 
-  <header>
-    <div>
-      <a href="https://kenkim-pol.github.io/G.M--Mission/" class="btn-blue">Home @ G.M.B</a>
-      <a href="https://kenkim-pol.github.io/G.M--Mission/" class="btn-black">History</a>
-      <a href="https://kenkim-pol.github.io/G.M--Mission/" class="btn-maroon">Mission & Vision</a>
-    </div>
-    <form>
-      <input type="text" placeholder="Search items">
-      <input type="submit" value="Search">
-    </form>
-  </header>
+<header>
+  <div class="nav-links">
+    <a href="https://kenkim-pol.github.io/G.M--Mission/" class="btn-blue">Home @ G.M.B</a>
+    <a href="https://kenkim-pol.github.io/G.M--Mission/" class="btn-black">History</a>
+    <a href="https://kenkim-pol.github.io/G.M--Mission/" class="btn-maroon">Mission & Vision</a>
+  </div>
+  <form>
+    <input type="text" placeholder="Search items" />
+    <input type="submit" value="Search" />
+  </form>
+</header>
 
-  <main>
-    <h1><a href="https://kenkim-pol.github.io/G.M--Mission/">Find more about the G.M</a></h1>
-    <a href="https://kenkim-pol.github.io/G.M.B-Contacts-SocialPage/">Contacts & Social links</a>
-    <a href="https://kenkim-pol.github.io/G.M--Mission/">G.M.B Leadership</a>
-    <a href="https://kenkim-pol.github.io/G.M--Mission/">G.M.B Membership</a>
-    <a href="https://kenkim-pol.github.io/Events-flow.github.io/">Events / Activities</a>
-    <a href="https://kenkim-pol.github.io/G.M-Subscription/">Subscriptions</a>
-    <a href="https://kenkim-pol.github.io/G.M--Mission/">Add More</a>
-    <h4><a href="https://kenkim-pol.github.io/Remarks-G.M/">Remarks And Comments: ......</a></h4>
-  </main>
+<main>
+  <h1><a href="https://kenkim-pol.github.io/G.M--Mission/">Find more about the G.M</a></h1>
+  <a href="https://kenkim-pol.github.io/G.M.B-Contacts-SocialPage/">Contacts & Social links</a>
+  <a href="https://kenkim-pol.github.io/G.M--Mission/">G.M.B Leadership</a>
+  <a href="https://kenkim-pol.github.io/G.M--Mission/">G.M.B Membership</a>
+  <a href="https://kenkim-pol.github.io/Events-flow.github.io/">Events / Activities</a>
+  <a href="https://kenkim-pol.github.io/G.M-Subscription/">Subscriptions</a>
+  <a href="https://kenkim-pol.github.io/G.M--Mission/">Add More</a>
+  <h4><a href="https://kenkim-pol.github.io/Remarks-G.M/">Remarks And Comments: ......</a></h4>
+</main>
 
-  <footer>
-    <p>&copy; @g.m.b 2025 by kenkim web-designers,!!!for learning purposes!!!.</p>
-  </footer>
+<footer>
+  <p>&copy; @g.m.b 2025 by kenkim web-designers,!!!for learning purposes!!!.</p>
+</footer>
 
 </body>
 </html>
-
